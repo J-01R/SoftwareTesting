@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="1" timestamp="1678916835092" analysisTimestamp="1678916834756" release="">
+  <Project projectName="DVGB17_SpotBugs_JonatanRassekhnia">
+    <Jar>C:\Users\Johnny\eclipse-workspace\DVGB17_SpotBugs_JonatanRassekhnia\bin</Jar>
+    <AuxClasspathEntry>C:\Users\Johnny\eclipse-workspace\DVGB17_SpotBugs_JonatanRassekhnia\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Johnny\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Johnny\eclipse-workspace\DVGB17_SpotBugs_JonatanRassekhnia\src</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="BugTest" start="15" end="22" startBytecode="0" endBytecode="12" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <LocalVariable name="z" register="3" pc="11" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="BugTest" start="17" end="17" startBytecode="10" endBytecode="10" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    <SourceLine classname="BugTest" start="17" end="17" startBytecode="10" endBytecode="10" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="z"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE" priority="2" rank="14" abbrev="DL" category="MT_CORRECTNESS" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="getNotificationSequenceNumber" signature="()Ljava/lang/Long;" isStatic="false">
+      <SourceLine classname="BugTest" start="50" end="55" startBytecode="0" endBytecode="168" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Long;">
+      <SourceLine classname="java.lang.Long" start="71" end="2010" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Type>
+    <Field classname="BugTest" name="myNtfSeqNbrCounter" signature="Ljava/lang/Long;" isStatic="false">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Field>
+    <SourceLine classname="BugTest" start="51" end="51" startBytecode="8" endBytecode="8" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    <SourceLine classname="BugTest" start="51" end="51" startBytecode="8" endBytecode="8" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="BugTest" start="2" end="2" startBytecode="0" endBytecode="66" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="1324" end="1326" startBytecode="0" endBytecode="69" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)Ljava/lang/Long;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" start="1207" end="1211" startBytecode="0" endBytecode="115" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="BugTest" start="48" end="48" startBytecode="10" endBytecode="10" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    <SourceLine classname="BugTest" start="48" end="48" startBytecode="10" endBytecode="10" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="getNotificationSequenceNumber" signature="()Ljava/lang/Long;" isStatic="false">
+      <SourceLine classname="BugTest" start="50" end="55" startBytecode="0" endBytecode="168" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="1324" end="1326" startBytecode="0" endBytecode="69" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)Ljava/lang/Long;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" start="1207" end="1211" startBytecode="0" endBytecode="115" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="BugTest" start="52" end="52" startBytecode="22" endBytecode="22" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    <SourceLine classname="BugTest" start="52" end="52" startBytecode="22" endBytecode="22" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS" priority="1" rank="14" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="BugTest" start="59" end="64" startBytecode="0" endBytecode="133" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="140" end="4653" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <SourceLine classname="BugTest" start="62" end="62" startBytecode="23" endBytecode="23" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    <SourceLine classname="BugTest" start="62" end="62" startBytecode="23" endBytecode="23" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS" priority="2" rank="16" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="BugTest" start="59" end="64" startBytecode="0" endBytecode="133" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <Type descriptor="LBugTest$Foo;" role="TYPE_FOUND">
+      <SourceLine classname="BugTest$Foo" start="6" end="6" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Type>
+    <SourceLine classname="BugTest" start="60" end="60" startBytecode="3" endBytecode="3" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    <SourceLine classname="BugTest" start="60" end="60" startBytecode="3" endBytecode="3" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="BugTest" start="59" end="64" startBytecode="0" endBytecode="133" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="BugTest" start="59" end="64" startBytecode="0" endBytecode="133" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="BugTest" start="15" end="22" startBytecode="0" endBytecode="104" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <SourceLine classname="BugTest" start="17" end="17" startBytecode="9" endBytecode="9" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    <SourceLine classname="BugTest" start="17" end="17" startBytecode="9" endBytecode="9" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+  </BugInstance>
+  <BugInstance type="IL_INFINITE_RECURSIVE_LOOP" priority="1" rank="9" abbrev="IL" category="CORRECTNESS" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="g" signature="()Z" isStatic="true">
+      <SourceLine classname="BugTest" start="25" end="28" startBytecode="0" endBytecode="60" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <SourceLine classname="BugTest" start="25" end="25" startBytecode="0" endBytecode="0" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+  </BugInstance>
+  <BugInstance type="ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD" priority="2" rank="6" abbrev="ML" category="MT_CORRECTNESS" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="getNotificationSequenceNumber" signature="()Ljava/lang/Long;" isStatic="false">
+      <SourceLine classname="BugTest" start="50" end="55" startBytecode="0" endBytecode="168" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <Field classname="BugTest" name="myNtfSeqNbrCounter" signature="Ljava/lang/Long;" isStatic="false">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Field>
+    <SourceLine classname="BugTest" start="53" end="53" startBytecode="38" endBytecode="38" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+  </BugInstance>
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" rank="5" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="BugTest" start="59" end="64" startBytecode="0" endBytecode="133" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <LocalVariable name="name" register="2" pc="15" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="BugTest" start="61" end="61" startBytecode="18" endBytecode="18" sourcefile="BugTest.java" sourcepath="BugTest.java" role="SOURCE_LINE_DEREF"/>
+  </BugInstance>
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" rank="5" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="BugTest" start="59" end="64" startBytecode="0" endBytecode="133" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <LocalVariable name="name" register="2" pc="30" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="BugTest" start="63" end="63" startBytecode="31" endBytecode="31" sourcefile="BugTest.java" sourcepath="BugTest.java" role="SOURCE_LINE_DEREF"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="h" signature="(Z)Z" isStatic="true">
+      <SourceLine classname="BugTest" start="34" end="37" startBytecode="0" endBytecode="80" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <Method classname="BugTest" name="h" signature="(Z)Z" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="BugTest" start="34" end="37" startBytecode="0" endBytecode="80" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <SourceLine classname="BugTest" start="35" end="35" startBytecode="13" endBytecode="13" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    <SourceLine classname="BugTest" start="35" end="35" startBytecode="13" endBytecode="13" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE" first="1">
+    <Class classname="BugTest">
+      <SourceLine classname="BugTest" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="BugTest" start="15" end="22" startBytecode="0" endBytecode="104" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <Method classname="BugTest" name="h" signature="(Z)Z" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="BugTest" start="34" end="37" startBytecode="0" endBytecode="80" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <SourceLine classname="BugTest" start="18" end="18" startBytecode="12" endBytecode="12" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    <SourceLine classname="BugTest" start="18" end="18" startBytecode="12" endBytecode="12" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="BugTest$A">
+      <SourceLine classname="BugTest$A" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Field classname="BugTest$A" name="hashCode" signature="I" isStatic="false">
+      <SourceLine classname="BugTest$A" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Field>
+    <SourceLine classname="BugTest$A" start="74" end="74" startBytecode="17" endBytecode="17" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+  </BugInstance>
+  <BugInstance type="UR_UNINIT_READ_CALLED_FROM_SUPER_CONSTRUCTOR" priority="1" rank="8" abbrev="UR" category="CORRECTNESS" first="1">
+    <Class classname="BugTest$B">
+      <SourceLine classname="BugTest$B" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Class>
+    <Method classname="BugTest$B" name="getValue" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="BugTest$B" start="86" end="86" startBytecode="0" endBytecode="46" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <Field classname="BugTest$B" name="value" signature="Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="BugTest$B" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Field>
+    <Method classname="BugTest$A" name="&lt;init&gt;" signature="(LBugTest;)V" isStatic="false" role="METHOD_SUPERCLASS_CONSTRUCTOR">
+      <SourceLine classname="BugTest$A" start="73" end="75" startBytecode="0" endBytecode="70" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <SourceLine classname="BugTest$A" start="74" end="74" startBytecode="11" endBytecode="11" sourcefile="BugTest.java" sourcepath="BugTest.java" role="SOURCE_LINE_CALLED_FROM_SUPERCLASS_AT"/>
+    <Method classname="BugTest$B" name="&lt;init&gt;" signature="(LBugTest;Ljava/lang/Object;)V" isStatic="false" role="METHOD_CONSTRUCTOR">
+      <SourceLine classname="BugTest$B" start="81" end="83" startBytecode="0" endBytecode="75" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    </Method>
+    <SourceLine classname="BugTest$B" start="82" end="82" startBytecode="12" endBytecode="12" sourcefile="BugTest.java" sourcepath="BugTest.java" role="SOURCE_LINE_FIELD_SET_TOO_LATE_AT"/>
+    <SourceLine classname="BugTest$B" start="86" end="86" startBytecode="1" endBytecode="1" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+    <SourceLine classname="BugTest$B" start="86" end="86" startBytecode="1" endBytecode="1" sourcefile="BugTest.java" sourcepath="BugTest.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 15 Mar 2023 21:38:19 +0100" total_classes="4" referenced_classes="16" total_bugs="17" total_size="57" num_packages="1" java_version="17.0.6" vm_version="17.0.6+10" cpu_seconds="21.73" clock_seconds="955.45" peak_mbytes="959.13" alloc_mbytes="2048.00" gc_seconds="0.01" priority_2="11" priority_1="6">
+    <PackageStats package="" total_bugs="17" total_types="4" total_size="57" priority_2="11" priority_1="6">
+      <ClassStats class="BugTest" sourceFile="BugTest.java" interface="false" size="36" bugs="15" priority_2="10" priority_1="5"/>
+      <ClassStats class="BugTest$A" sourceFile="BugTest.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="BugTest$B" sourceFile="BugTest.java" interface="false" size="9" bugs="1" priority_1="1"/>
+      <ClassStats class="BugTest$Foo" sourceFile="BugTest.java" interface="true" size="4" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="80" invocations="368" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="3667" standardDeviationMicrosecondsPerInvocation="404"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="61" invocations="2" avgMicrosecondsPerInvocation="30601" maxMicrosecondsPerInvocation="51995" standardDeviationMicrosecondsPerInvocation="21394"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="60" invocations="371" avgMicrosecondsPerInvocation="162" maxMicrosecondsPerInvocation="772" standardDeviationMicrosecondsPerInvocation="119"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="13" invocations="16" avgMicrosecondsPerInvocation="865" maxMicrosecondsPerInvocation="4699" standardDeviationMicrosecondsPerInvocation="1424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="11" invocations="334" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="1319" standardDeviationMicrosecondsPerInvocation="86"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="11" invocations="16" avgMicrosecondsPerInvocation="701" maxMicrosecondsPerInvocation="5570" standardDeviationMicrosecondsPerInvocation="1368"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1678916835092" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
